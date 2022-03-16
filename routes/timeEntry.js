@@ -22,7 +22,7 @@ router.get('/',[auth,admin], (req, res)=> {
       res.send(result);
   })
 });
-
+//  new push only
 router.post("/",[auth], (req, res)=>{
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
