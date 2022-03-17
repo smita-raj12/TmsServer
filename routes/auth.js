@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
   
   const {email, password} = req.body;
  
-    if(!email) return res.status(400).send("Invalid Email.");
+    if(!email) return res.status(400).send("Invalid Emailxxx.");
 
      let getUser = "SELECT * FROM users WHERE email = ?;"
       db.query(getUser, [email], async (err, result)=>{
