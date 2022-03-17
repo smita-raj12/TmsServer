@@ -10,7 +10,7 @@ require("./startup/routes")(app);
 require("./startup/db");
 
 
-const PORT = 3001
+const PORT = 3306
 const server= app.listen(process.env.PORT || PORT,() => {
     console.log(`running on port ${PORT}`);
 });
