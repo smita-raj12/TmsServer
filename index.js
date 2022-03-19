@@ -9,6 +9,7 @@ require("./startup/cors")(app);
 require("./startup/routes")(app);
 require("./startup/db");
 
+console.log("AWS server working")
 
 const PORT = 3001
 const server= app.listen(process.env.PORT || PORT,() => {
